@@ -85,7 +85,7 @@ function Website_navbar({}: Props) {
           onClick={() => {
             setToggleMenu(!toggleMenu);
           }}
-          className={`md:hidden`}
+          className={`md:hidden bg-slate-800 p-2 rounded-lg`}
         >
           {toggleMenu ? (
             <svg
