@@ -118,7 +118,7 @@ function Website_navbar({}: Props) {
       </div>
       {toggleMenu && (
         <ul
-          className={` flex flex-col items-start justify-start gap-12 py-12 md:hidden`}
+          className={`w-full flex flex-col items-start justify-start gap-12 p-12 md:hidden`}
         >
           {navLink.map((item, i) => (
             <li
