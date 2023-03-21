@@ -26,7 +26,7 @@ function ComponentsPreview({ name, component }: Props) {
           <button
             aria-label="open code preview"
             onClick={() => setCodeToggle(!codeToggle)}
-            className=" w-full border-2 border-black hover:bg-gray-200 px-12 py-2 rounded-lg capitalize flex items-center gap-4 md:w-auto"
+            className={` w-full border-2 px-12 py-2 rounded-lg capitalize flex items-center justify-center gap-4 font-semibold text-xl focus:ring active:scale-95 duration-300 break-all md:w-60  md:text-2xl border-black focus:ring-black/30 hover:bg-black/80 hover:text-white ${codeToggle && 'bg-black text-white'}`}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -50,9 +50,7 @@ function ComponentsPreview({ name, component }: Props) {
               setCopyToggle(!copyToggle),
                 copyToClipBoard(reactElementToJSXString(component));
             }}
-            className={` hover:bg-gray-200 px-12 py-2 rounded-lg capitalize flex items-center gap-4 ${
-              copyToggle ? "bg-green-500 text-white" : ""
-            }`}
+            className={` w-full border-2 px-12 py-2 rounded-lg capitalize flex items-center justify-center gap-4 font-semibold text-xl focus:ring active:scale-95 duration-300 break-all md:w-60  md:text-2xl   ${copyToggle ? ' border-green-500 bg-green-500 focus:ring-green-500/30 hover:bg-green-500/80 text-white' : 'border-white focus:ring-white hover:bg-gray-300/80'}`}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +71,7 @@ function ComponentsPreview({ name, component }: Props) {
         </div>
       </div>
 
-      <div className="w-full h-full border-2 flex items-center justify-center p-12 bg-gray-200">
+      <div className="w-full h-full border-2 flex items-center justify-center px-4 py-12 md:p-12 bg-gray-200">
         {component}
       </div>
       {codeToggle && (
