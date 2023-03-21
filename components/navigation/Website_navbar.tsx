@@ -64,14 +64,13 @@ function Website_navbar({}: Props) {
   {/* state management */ }
   const [toggleMenu, setToggleMenu] = useState<boolean>(false);
 
+  {/*const*/ }
   const router = useRouter()
 
 
-  console.log(router)
-
   return (
     <nav
-      className={`w-screen flex flex-col items-center sticky top-0 md:flex-row border-b-2 bg-zinc-900 text-white `}
+      className={`flex flex-col items-center sticky top-0 md:flex-row border-b-2 bg-zinc-900 text-white z-50`}
     >
       <div className={`w-full flex items-center justify-between p-6 ${toggleMenu && 'border-b-2'} md:border-b-0 `}>
         <Link href={`/`}
