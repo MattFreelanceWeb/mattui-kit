@@ -2,7 +2,7 @@ import React, { ReactElement, useState } from "react";
 import { Prism } from "@mantine/prism";
 import reactElementToJSXString from "react-element-to-jsx-string";
 
-type Props = { name: string; component: ReactElement };
+type Props = { name: string; component: ReactElement};
 
 function ComponentsPreview({ name, component }: Props) {
   {
@@ -10,6 +10,7 @@ function ComponentsPreview({ name, component }: Props) {
   }
   const [codeToggle, setCodeToggle] = useState<Boolean>(false);
   const [copyToggle, setCopyToggle] = useState<Boolean>(false);
+
   {
     /* function*/
   }
@@ -128,7 +129,7 @@ function ComponentsPreview({ name, component }: Props) {
               close
             </button>
           </div>
-          <Prism colorScheme="dark" language="jsx" noCopy withLineNumbers>
+          <Prism colorScheme="dark" language="jsx" noCopy withLineNumbers >
             {reactElementToJSXString(component)}
           </Prism>
         </div>
