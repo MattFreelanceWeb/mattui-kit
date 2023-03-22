@@ -11,7 +11,7 @@ function Hero({}: Props) {
           Mattui-kit
         </h2>
         <p className="text-3xl px-4 ">
-          the easyest way to implemente <span className=" bg-gradient-to-l from-cyan-500 to-blue-500 bg-clip-text text-transparent font-bold">TailwindCSS</span>  components in your REACT
+          the easiest way to implemente <span className=" bg-gradient-to-l from-cyan-500 to-blue-500 bg-clip-text text-transparent font-bold">TailwindCSS</span>  components in your REACT
           application
         </p>
         <div>

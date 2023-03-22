@@ -28,8 +28,8 @@ function index({}: Props) {
   ];
 
   return (
-    <main className="flex flex-col items-center justify-center w-screen py-12">
-      <ul className="w-full flex items-center justify-center gap-4 flex-wrap ">
+    <main className="flex flex-col items-center justify-center w-screen  py-12">
+      <ul className="w-full flex items-center justify-center gap-4 flex-wrap  ">
         {componentsArray.map((item, i) => (
           <li
             key={i}
