@@ -1,10 +1,13 @@
+import ComingSoon from '@/components/comingSoon/ComingSoon'
 import React from 'react'
 
 type Props = {}
 
 function index({}: Props) {
   return (
-    <div>index templates</div>
+    <main>
+      <ComingSoon/>
+    </main>
   )
 }
 
